@@ -1,0 +1,9 @@
+class AddFullNameToUsers < ActiveRecord::Migration
+  def change
+	change_table :users do |t|
+		t.add_column :first_name, :string #if !column_exists(:first_name)
+		t.add_column :middle_initial, :string #if !column_exists(:middle_initial)
+		t.add_column :last_name, :string #if !column_exists(:last_name)
+	end
+  end
+end

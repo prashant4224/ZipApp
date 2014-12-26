@@ -1,0 +1,4 @@
+<div class="avatar" id="avatar_<%= id %>">
+	<%= f.file_field :avatar %>
+	<%= f.label :_destroy, "-", :onClick=> "remove_file('#{id}')" %>
+</div>
